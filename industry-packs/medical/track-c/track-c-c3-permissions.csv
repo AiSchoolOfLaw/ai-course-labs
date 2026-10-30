@@ -1,0 +1,26 @@
+folder,shared_with,access,sharing_link
+Patients/Clinic A/Referrals 2026,Clinic A care team,Edit,None
+Patients/Clinic A/Test results,Everyone,Edit,None
+Patients/Clinic B/Patient letters,Clinic B care team,Edit,Anyone with the link
+Patients/Clinic B/Referrals 2026,Clinic B care team; p.ng,Edit,None
+Patients/Clinic C/Care plans,All staff,Read,None
+Patients/Staff-patients (restricted),Practice manager; Clinic A care team,Edit,None
+Patients/Clinic C/Referrals 2026,Clinic C care team,Edit,None
+Patients/Clinic A/Scanned forms,Clinic A care team,Edit,None
+Patients/Clinic B/Scanned forms,Clinic B care team,Edit,None
+Patients/Clinic C/Discharge summaries,Clinic C care team,Edit,People in the organization with the link
+Patients/Clinic B/Vaccination records,Clinic B care team,Edit,None
+Patients/Clinic C/Vaccination records,Clinic C care team; j.ortiz,Edit,None
+Patients/Clinic A/Mental health letters,Everyone,Read,None
+Policies/Clinical,All clinical staff,Read,None
+Policies/Administrative,All staff,Read,None
+Templates/Letters,All staff,Read,None
+Knowledge/Clinical guidelines,All clinical staff,Read,None
+HR/Salaries 2026,Everyone,Read,None
+HR/Disciplinary,HR team,Edit,None
+Finance/Billing exports,Finance team,Edit,Anyone with the link
+Archive/Patient records 2012-2018,Everyone,Read,None
+Marketing/Patient leaflets,Everyone,Read,Anyone with the link
+IT/Runbooks,IT team,Edit,None
+Governance/Incident register,Governance team,Edit,None
+Patients/Clinic B/Physiotherapy notes,Clinic B care team,Edit,None

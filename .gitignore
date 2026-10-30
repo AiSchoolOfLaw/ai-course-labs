@@ -1,0 +1,24 @@
+# secrets
+.env
+*.env
+!.env.example
+*.key
+*.pem
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+# lab outputs and local databases
+db/
+chroma/
+chroma_db/
+*.sqlite
+*.sqlite3
+usage.csv
+requests.log
+eval_results.csv
+# OS
+.DS_Store
+Thumbs.db

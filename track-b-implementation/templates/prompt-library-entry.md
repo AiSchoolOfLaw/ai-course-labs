@@ -1,0 +1,11 @@
+# Prompt Library Entry
+- ID and name:
+- Department and task:
+- Approved tool:
+- Prompt (full text):
+- Input needed:
+- Example output:
+- Test scores (accuracy / usefulness / safety):
+- Human review required: what to check
+- Do not use when:
+- Owner, version, last tested:

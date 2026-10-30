@@ -1,0 +1,21 @@
+user,department,license,monthly_cost_usd,last_active
+a.khan,Patient Services,Copilot,30,2026-09-30
+b.shaw,Clinical Admin,Copilot,30,2026-09-30
+c.ward,Practice Operations,Claude,30,2026-09-30
+d.lin,Patient Services,Copilot,30,2026-09-30
+e.moore,Clinical Admin,Copilot,30,2026-09-30
+f.ahmed,Medical Records,Copilot,30,2026-09-29
+g.ross,Patient Services,Copilot,30,2026-09-30
+h.park,Practice Operations,Claude,30,2026-09-30
+i.bell,Clinical Admin,Copilot,30,2026-09-30
+j.cruz,Finance,Copilot,30,2026-09-30
+k.osei,Patient Services,Copilot,30,2026-09-30
+l.ford,Medical Records,Copilot,30,2026-09-30
+m.nash,Clinical Admin,Copilot,30,2026-09-30
+n.vale,Practice Operations,Claude,30,2026-09-30
+o.quinn,Finance,Copilot,30,2026-09-28
+p.hart,Patient Services,Copilot,30,2026-09-30
+q.reed,Patient Services,Copilot,30,2026-07-14
+r.stone,Clinical Admin,Copilot,30,never
+s.wu,Medical Records,Copilot,30,2026-06-30
+t.lane,Practice Operations,Claude,30,2026-08-02

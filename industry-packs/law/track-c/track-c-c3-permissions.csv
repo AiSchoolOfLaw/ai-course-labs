@@ -1,0 +1,26 @@
+folder,shared_with,access,sharing_link
+Clients/Hartwell Inc/Matter 3301,Corporate team,Edit,None
+Clients/Hartwell Inc/Matter 3302,Everyone,Edit,None
+Clients/Bramley Estates/Matter 4471,Property team,Edit,Anyone with the link
+Clients/Orchard Bank/Matter 2210,Litigation team; p.ng,Edit,None
+Clients/Vantage Pharma/Matter 5520,All staff,Read,None
+Clients/Redstone v Calder,Litigation team; Corporate team,Edit,None
+Clients/Calder Group/Matter 6004,Corporate team,Edit,None
+Clients/Lumen Retail/Matter 1188,Corporate team,Edit,None
+Clients/Northbay Council/Matter 7302,Public sector team,Edit,None
+Clients/Kestrel Shipping/Matter 2955,Litigation team,Edit,People in the firm with the link
+Clients/Ashford Trust/Matter 8120,Private client team,Edit,None
+Clients/Ashford Trust/Matter 8121,Private client team; j.ortiz,Edit,None
+Clients/Greystone Energy/Matter 4019,Everyone,Read,None
+Precedents/Litigation,All lawyers,Read,None
+Precedents/Corporate,All lawyers,Read,None
+Templates/Letters,All staff,Read,None
+Knowledge/Practice notes,All lawyers,Read,None
+HR/Salaries 2026,Everyone,Read,None
+HR/Disciplinary,HR team,Edit,None
+Finance/Billing exports,Finance team,Edit,Anyone with the link
+Archive/Clients 2012-2018,Everyone,Read,None
+Marketing/Brochures,Everyone,Read,Anyone with the link
+IT/Runbooks,IT team,Edit,None
+Risk/Conflict register,Risk team,Edit,None
+Clients/Sable Media/Matter 3777,Corporate team,Edit,None

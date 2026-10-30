@@ -1,0 +1,21 @@
+user,department,license,monthly_cost_usd,last_active
+a.khan,Litigation,Copilot,30,2026-09-30
+b.shaw,Corporate,Copilot,30,2026-09-30
+c.ward,Knowledge,Claude,30,2026-09-30
+d.lin,Litigation,Copilot,30,2026-09-30
+e.moore,Corporate,Copilot,30,2026-09-30
+f.ahmed,Private Client,Copilot,30,2026-09-29
+g.ross,Litigation,Copilot,30,2026-09-30
+h.park,Knowledge,Claude,30,2026-09-30
+i.bell,Corporate,Copilot,30,2026-09-30
+j.cruz,Operations,Copilot,30,2026-09-30
+k.osei,Litigation,Copilot,30,2026-09-30
+l.ford,Private Client,Copilot,30,2026-09-30
+m.nash,Corporate,Copilot,30,2026-09-30
+n.vale,Knowledge,Claude,30,2026-09-30
+o.quinn,Operations,Copilot,30,2026-09-28
+p.hart,Litigation,Copilot,30,2026-09-30
+q.reed,Litigation,Copilot,30,2026-07-14
+r.stone,Corporate,Copilot,30,never
+s.wu,Private Client,Copilot,30,2026-06-30
+t.lane,Knowledge,Claude,30,2026-08-02

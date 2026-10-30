@@ -1,0 +1,11 @@
+# Pinned versions tested together for the course labs (v1.0.0).
+# mcp must stay below 2: version 2 removed mcp.server.fastmcp, which the A6 lab uses.
+openai==3.41.0
+python-dotenv==1.2.4
+chromadb==1.5.9
+fastapi==0.162.0
+uvicorn==0.54.0
+pydantic==2.14.1
+mcp[cli]==1.30.0
+httpx==0.28.1
+pytest==9.2.0

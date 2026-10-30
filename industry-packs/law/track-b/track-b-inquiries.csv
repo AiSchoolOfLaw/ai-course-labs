@@ -1,0 +1,31 @@
+inquiry_id,received,channel,client_name,phone,email,matter_type,urgency_note,conflict_check,status,assigned_to
+NL-2001,2026-10-12,Phone,Anna Price,555-0101,anna.price@example.com,Family,,Clear,Consultation booked,RL
+NL-2002,2026-10-12,Web form,Ben Cole,555-0102,ben.cole@example.com,Real estate,,Clear,Called back,JB
+NL-2003,2026-10-12,Email,Carla Diaz,555-0103,carla.diaz@example.com,Wills,,Clear,Consultation booked,KM
+NL-2004,2026-10-12,Phone,David Moss,555-0104,david.moss@example.com,Family,,,New,
+NL-2005,2026-10-13,Web form,Elena Ford,555-0105,elena.ford@example.com,Real estate,,Clear,Consultation booked,JB
+NL-2006,2026-10-13,Email,Farid Hassan,555-0106,farid.hassan@example.com,family law,,Clear,Called back,RL
+NL-2007,2026-10-13,Phone,Grace Lee,,,Family,,Clear,New,
+NL-2008,2026-10-13,Web form,Hugo Brandt,555-0108,hugo.brandt@example.com,Wills,,Clear,Closed - no reply,
+NL-2009,12/10/2026,Email,Isla Grant,555-0109,isla.grant@example.com,Real estate,,Clear,Called back,JB
+NL-2010,2026-10-14,Phone,Jack Owens,555-0110,jack.owens@example.com,property sale,,Clear,New,
+NL-2011,2026-10-14,Web form,Kara Singh,555-0111,kara.singh@example.com,Family,,Clear,Consultation booked,RL
+NL-2012,2026-10-14,Email,Liam Byrne,555-0112,liam.byrne@example.com,Wills,,Clear,New,
+NL-2012,2026-10-14,Email,Liam Byrne,555-0112,liam.byrne@example.com,Wills,,Clear,New,
+NL-2013,2026-10-14,Phone,Maya Patel,555-0113,maya.patel@example.com,Real estate,,Clear,Called back,JB
+NL-2014,2026-10-10,Email,Noah Clarke,555-0114,noah.clarke@example.com,Family,Court hearing on 2026-10-20,Clear,New,
+NL-2015,2026-10-15,Web form,Olivia Hart,555-0115,olivia.hart@example.com,Family,,,New,
+NL-2016,2026-10-15,Phone,Peter Walsh,555-0116,peter.walsh@example.com,Wills,,Clear,Consultation booked,KM
+NL-2017,2026-10-15,Email,Quinn Adams,555-0117,quinn.adams@example.com,Real estate,,Clear,Consultation booked,
+NL-2018,2026-10-15,Web form,Rosa Mendes,555-0118,rosa.mendes@example.com,FAM,,Clear,Called back,RL
+NL-2019,2026-10-16,Phone,Sam Turner,555-0119,sam.turner@example.com,Real estate,,Clear,New,
+NL-2020,2026-10-16,Web form,Tara Doyle,555-0120,tara.doyle@example,Family,,Clear,New,
+NL-2021,2026-10-16,Email,Umar Rashid,555-0121,umar.rashid@example.com,Will,,Clear,Called back,KM
+NL-2022,2026-10-16,Phone,Vera Novak,555-0122,vera.novak@example.com,Family,,Clear,Consultation booked,RL
+NL-2023,2026-10-17,Web form,Will Carter,555-0123,will.carter@example.com,Real estate,,,New,
+NL-2024,2026-10-17,Email,Xena Brooks,555-0124,xena.brooks@example.com,Family,,Match,Consultation booked,RL
+NL-2025,2026-10-17,Phone,Yusuf Ali,555-0125,yusuf.ali@example.com,Wills,,Clear,New,
+NL-2026,Oct 15,Web form,Zoe King,555-0126,zoe.king@example.com,Real estate,,Clear,Called back,JB
+NL-2027,2026-10-18,Email,Adam Frost,555-0127,adam.frost@example.com,Family,Needs advice before deadline 2026-10-24,Clear,New,
+NL-2028,2025-11-03,Phone,Bella Ross,555-0128,bella.ross@example.com,Wills,,Clear,New,
+NL-2029,2026-10-18,Web form,Carl Evans,555-0129,carl.evans@example.com,Real estate,,Clear,New,

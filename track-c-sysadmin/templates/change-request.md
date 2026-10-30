@@ -1,0 +1,13 @@
+# Change Request
+- ID, requester, date:
+- Platform and environment:
+- Change description:
+- Reason / business benefit:
+- Risk level (standard / normal / emergency) and impact if it fails:
+- Test evidence (from staging):
+- Implementation steps:
+- Verification steps:
+- Rollback plan and time needed:
+- Window and user communication:
+- Approver and decision:
+- Result and closure date:

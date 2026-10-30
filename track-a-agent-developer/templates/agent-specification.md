@@ -1,0 +1,13 @@
+# Agent Specification: <name>
+- Goal (one sentence):
+- Users and channels:
+- Steps the agent automates:
+- Steps it assists (human approves):
+- Steps kept human-only:
+- Tools (name, purpose, read-only or changes data):
+- Data used and whether it contains PII or PHI:
+- Must never do:
+- Handoff rules (when, to whom):
+- Success measures and targets:
+- Risks and how they are reduced:
+- Owner and review date:

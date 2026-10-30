@@ -1,0 +1,302 @@
+date,user,department,platform,prompts,tokens
+2026-09-01,a.khan,Patient Services,Copilot,11,15411
+2026-09-01,b.shaw,Clinical Admin,Copilot,24,57984
+2026-09-01,d.lin,Patient Services,Copilot,4,3844
+2026-09-01,e.moore,Clinical Admin,Copilot,19,40508
+2026-09-01,f.ahmed,Medical Records,Copilot,25,55750
+2026-09-01,g.ross,Patient Services,Copilot,10,18190
+2026-09-01,h.park,Practice Operations,Claude,8,18632
+2026-09-01,i.bell,Clinical Admin,ReferralAI,7,28140
+2026-09-01,k.osei,Patient Services,Copilot,15,16470
+2026-09-01,l.ford,Medical Records,Copilot,22,31702
+2026-09-01,m.nash,Clinical Admin,ReferralAI,20,69300
+2026-09-01,o.quinn,Finance,Copilot,23,49818
+2026-09-02,a.khan,Patient Services,Copilot,25,26050
+2026-09-02,b.shaw,Clinical Admin,Copilot,12,12756
+2026-09-02,c.ward,Practice Operations,Claude,15,22035
+2026-09-02,d.lin,Patient Services,Copilot,8,13264
+2026-09-02,e.moore,Clinical Admin,ReferralAI,25,172425
+2026-09-02,f.ahmed,Medical Records,Copilot,20,47860
+2026-09-02,g.ross,Patient Services,Copilot,15,21780
+2026-09-02,i.bell,Clinical Admin,Copilot,24,37536
+2026-09-02,j.cruz,Finance,Copilot,10,25830
+2026-09-02,k.osei,Patient Services,Copilot,15,21720
+2026-09-02,l.ford,Medical Records,Copilot,9,20178
+2026-09-02,m.nash,Clinical Admin,ReferralAI,7,30282
+2026-09-02,n.vale,Practice Operations,Claude,21,37317
+2026-09-02,p.hart,Patient Services,Copilot,7,13601
+2026-09-03,a.khan,Patient Services,Copilot,6,7278
+2026-09-03,b.shaw,Clinical Admin,ReferralAI,22,67980
+2026-09-03,c.ward,Practice Operations,Claude,19,26866
+2026-09-03,e.moore,Clinical Admin,Copilot,24,57024
+2026-09-03,f.ahmed,Medical Records,Copilot,23,36708
+2026-09-03,g.ross,Patient Services,Copilot,8,14632
+2026-09-03,h.park,Practice Operations,Claude,19,46740
+2026-09-03,i.bell,Clinical Admin,Copilot,23,34753
+2026-09-03,j.cruz,Finance,Copilot,7,11655
+2026-09-03,k.osei,Patient Services,Copilot,22,34386
+2026-09-03,l.ford,Medical Records,Copilot,14,35728
+2026-09-03,m.nash,Clinical Admin,Copilot,10,20610
+2026-09-03,o.quinn,Finance,Copilot,5,12285
+2026-09-03,p.hart,Patient Services,Copilot,7,15757
+2026-09-04,a.khan,Patient Services,Copilot,11,21780
+2026-09-04,b.shaw,Clinical Admin,ReferralAI,9,54108
+2026-09-04,c.ward,Practice Operations,Claude,25,38450
+2026-09-04,d.lin,Patient Services,Copilot,17,33303
+2026-09-04,e.moore,Clinical Admin,Copilot,10,10310
+2026-09-04,f.ahmed,Medical Records,Copilot,21,28371
+2026-09-04,g.ross,Patient Services,Copilot,10,10380
+2026-09-04,i.bell,Clinical Admin,Copilot,19,26353
+2026-09-04,j.cruz,Finance,Copilot,9,18036
+2026-09-04,k.osei,Patient Services,Copilot,10,25060
+2026-09-04,l.ford,Medical Records,Copilot,9,9837
+2026-09-04,m.nash,Clinical Admin,ReferralAI,14,74214
+2026-09-04,n.vale,Practice Operations,Claude,24,53712
+2026-09-04,p.hart,Patient Services,Copilot,13,33007
+2026-09-07,a.khan,Patient Services,Copilot,9,11601
+2026-09-07,b.shaw,Clinical Admin,Copilot,16,20400
+2026-09-07,c.ward,Practice Operations,Claude,5,9035
+2026-09-07,d.lin,Patient Services,Copilot,4,8940
+2026-09-07,f.ahmed,Medical Records,Copilot,10,12400
+2026-09-07,g.ross,Patient Services,Copilot,9,15489
+2026-09-07,i.bell,Clinical Admin,Copilot,15,21645
+2026-09-07,k.osei,Patient Services,Copilot,16,37216
+2026-09-07,n.vale,Practice Operations,Claude,7,9016
+2026-09-07,o.quinn,Finance,Copilot,21,50526
+2026-09-07,p.hart,Patient Services,Copilot,4,4008
+2026-09-08,a.khan,Patient Services,Copilot,4,7760
+2026-09-08,b.shaw,Clinical Admin,Copilot,5,10590
+2026-09-08,c.ward,Practice Operations,Claude,15,17175
+2026-09-08,e.moore,Clinical Admin,Copilot,22,23474
+2026-09-08,f.ahmed,Medical Records,Copilot,11,14498
+2026-09-08,g.ross,Patient Services,Copilot,10,14430
+2026-09-08,h.park,Practice Operations,Claude,17,26299
+2026-09-08,k.osei,Patient Services,Copilot,5,10005
+2026-09-08,l.ford,Medical Records,Copilot,7,11298
+2026-09-08,n.vale,Practice Operations,Claude,12,14676
+2026-09-08,o.quinn,Finance,Copilot,22,56144
+2026-09-08,p.hart,Patient Services,Copilot,24,61752
+2026-09-09,a.khan,Patient Services,Copilot,7,10087
+2026-09-09,b.shaw,Clinical Admin,Copilot,20,24360
+2026-09-09,c.ward,Practice Operations,Claude,25,40050
+2026-09-09,d.lin,Patient Services,Copilot,19,36100
+2026-09-09,e.moore,Clinical Admin,Copilot,5,10995
+2026-09-09,f.ahmed,Medical Records,Copilot,4,3628
+2026-09-09,g.ross,Patient Services,Copilot,23,33028
+2026-09-09,h.park,Practice Operations,Claude,20,46900
+2026-09-09,i.bell,Clinical Admin,Copilot,6,6324
+2026-09-09,k.osei,Patient Services,Copilot,20,19460
+2026-09-09,l.ford,Medical Records,Copilot,16,18576
+2026-09-09,m.nash,Clinical Admin,ReferralAI,4,19584
+2026-09-09,n.vale,Practice Operations,Claude,24,26640
+2026-09-09,o.quinn,Finance,Copilot,22,53548
+2026-09-09,p.hart,Patient Services,Copilot,8,20304
+2026-09-10,a.khan,Patient Services,Copilot,3,3801
+2026-09-10,b.shaw,Clinical Admin,ReferralAI,16,122016
+2026-09-10,c.ward,Practice Operations,Claude,11,13486
+2026-09-10,d.lin,Patient Services,Copilot,15,14685
+2026-09-10,e.moore,Clinical Admin,Copilot,9,23148
+2026-09-10,g.ross,Patient Services,Copilot,10,9480
+2026-09-10,h.park,Practice Operations,Claude,13,19110
+2026-09-10,i.bell,Clinical Admin,ReferralAI,14,92946
+2026-09-10,j.cruz,Finance,Copilot,3,3408
+2026-09-10,k.osei,Patient Services,Copilot,8,16712
+2026-09-10,m.nash,Clinical Admin,Copilot,22,39358
+2026-09-10,n.vale,Practice Operations,Claude,16,34256
+2026-09-10,p.hart,Patient Services,Copilot,11,10890
+2026-09-11,a.khan,Patient Services,Copilot,19,48469
+2026-09-11,b.shaw,Clinical Admin,Copilot,14,24962
+2026-09-11,c.ward,Practice Operations,Claude,22,33924
+2026-09-11,d.lin,Patient Services,Copilot,12,23256
+2026-09-11,e.moore,Clinical Admin,ReferralAI,13,67236
+2026-09-11,f.ahmed,Medical Records,Copilot,9,15849
+2026-09-11,g.ross,Patient Services,Copilot,24,58368
+2026-09-11,i.bell,Clinical Admin,ReferralAI,15,90990
+2026-09-11,j.cruz,Finance,Copilot,12,15960
+2026-09-11,k.osei,Patient Services,Copilot,17,30668
+2026-09-11,l.ford,Medical Records,Copilot,19,35511
+2026-09-11,m.nash,Clinical Admin,Copilot,24,25752
+2026-09-11,n.vale,Practice Operations,Claude,5,12880
+2026-09-11,p.hart,Patient Services,Copilot,10,25510
+2026-09-14,a.khan,Patient Services,Copilot,4,5604
+2026-09-14,c.ward,Practice Operations,Claude,17,29716
+2026-09-14,e.moore,Clinical Admin,ReferralAI,18,92772
+2026-09-14,f.ahmed,Medical Records,Copilot,6,14964
+2026-09-14,g.ross,Patient Services,Copilot,25,49000
+2026-09-14,h.park,Practice Operations,Claude,6,11004
+2026-09-14,i.bell,Clinical Admin,ReferralAI,24,143064
+2026-09-14,k.osei,Patient Services,Copilot,22,56518
+2026-09-14,l.ford,Medical Records,Copilot,20,36260
+2026-09-14,n.vale,Practice Operations,Claude,17,24310
+2026-09-14,o.quinn,Finance,Copilot,19,35948
+2026-09-14,p.hart,Patient Services,Copilot,17,17986
+2026-09-15,a.khan,Patient Services,Copilot,11,17457
+2026-09-15,b.shaw,Clinical Admin,Copilot,7,8456
+2026-09-15,c.ward,Practice Operations,Claude,25,33450
+2026-09-15,d.lin,Patient Services,Copilot,13,26143
+2026-09-15,e.moore,Clinical Admin,Copilot,9,15840
+2026-09-15,f.ahmed,Medical Records,Copilot,21,35259
+2026-09-15,g.ross,Patient Services,Copilot,12,29316
+2026-09-15,h.park,Practice Operations,Claude,20,48600
+2026-09-15,i.bell,Clinical Admin,Copilot,18,24282
+2026-09-15,j.cruz,Finance,Copilot,3,5088
+2026-09-15,k.osei,Patient Services,Copilot,8,14856
+2026-09-15,n.vale,Practice Operations,Claude,21,43155
+2026-09-15,o.quinn,Finance,Copilot,23,40871
+2026-09-15,p.hart,Patient Services,Copilot,8,8016
+2026-09-16,a.khan,Patient Services,Copilot,9,16479
+2026-09-16,b.shaw,Clinical Admin,ReferralAI,11,80520
+2026-09-16,d.lin,Patient Services,Copilot,18,16902
+2026-09-16,e.moore,Clinical Admin,Copilot,14,19026
+2026-09-16,f.ahmed,Medical Records,Copilot,3,4218
+2026-09-16,g.ross,Patient Services,Copilot,22,26664
+2026-09-16,h.park,Practice Operations,Claude,24,27216
+2026-09-16,i.bell,Clinical Admin,Copilot,17,39644
+2026-09-16,j.cruz,Finance,Copilot,8,17120
+2026-09-16,k.osei,Patient Services,Copilot,8,12296
+2026-09-16,l.ford,Medical Records,Copilot,12,24948
+2026-09-16,m.nash,Clinical Admin,ReferralAI,15,106380
+2026-09-16,n.vale,Practice Operations,Claude,6,13962
+2026-09-16,o.quinn,Finance,Copilot,21,52542
+2026-09-16,p.hart,Patient Services,Copilot,24,39792
+2026-09-17,a.khan,Patient Services,Copilot,3,5280
+2026-09-17,b.shaw,Clinical Admin,Copilot,16,26256
+2026-09-17,c.ward,Practice Operations,Claude,25,30325
+2026-09-17,d.lin,Patient Services,Copilot,22,56210
+2026-09-17,f.ahmed,Medical Records,Copilot,16,41456
+2026-09-17,g.ross,Patient Services,Copilot,13,18226
+2026-09-17,h.park,Practice Operations,Claude,11,20053
+2026-09-17,i.bell,Clinical Admin,ReferralAI,21,135387
+2026-09-17,j.cruz,Finance,Copilot,3,5736
+2026-09-17,k.osei,Patient Services,Copilot,18,24012
+2026-09-17,l.ford,Medical Records,Copilot,13,19136
+2026-09-17,n.vale,Practice Operations,Claude,20,18400
+2026-09-17,o.quinn,Finance,Copilot,5,6970
+2026-09-17,p.hart,Patient Services,Copilot,20,49040
+2026-09-18,a.khan,Patient Services,Copilot,23,54211
+2026-09-18,b.shaw,Clinical Admin,Copilot,5,7510
+2026-09-18,c.ward,Practice Operations,Claude,12,27108
+2026-09-18,d.lin,Patient Services,Copilot,20,39740
+2026-09-18,e.moore,Clinical Admin,ReferralAI,14,98238
+2026-09-18,f.ahmed,Medical Records,Copilot,11,15092
+2026-09-18,g.ross,Patient Services,Copilot,13,14872
+2026-09-18,h.park,Practice Operations,Claude,9,12087
+2026-09-18,i.bell,Clinical Admin,ReferralAI,21,154728
+2026-09-18,j.cruz,Finance,Copilot,6,7782
+2026-09-18,k.osei,Patient Services,Copilot,8,12152
+2026-09-18,l.ford,Medical Records,Copilot,11,10923
+2026-09-18,n.vale,Practice Operations,Claude,23,56143
+2026-09-18,o.quinn,Finance,Copilot,21,31122
+2026-09-18,p.hart,Patient Services,Copilot,13,16601
+2026-09-21,b.shaw,Clinical Admin,ReferralAI,6,46494
+2026-09-21,c.ward,Practice Operations,Claude,5,10405
+2026-09-21,d.lin,Patient Services,Copilot,7,8435
+2026-09-21,e.moore,Clinical Admin,ReferralAI,5,21120
+2026-09-21,f.ahmed,Medical Records,Copilot,22,46640
+2026-09-21,g.ross,Patient Services,Copilot,19,31901
+2026-09-21,h.park,Practice Operations,Claude,12,25260
+2026-09-21,j.cruz,Finance,Copilot,22,53130
+2026-09-21,k.osei,Patient Services,Copilot,23,30636
+2026-09-21,l.ford,Medical Records,Copilot,8,11128
+2026-09-21,m.nash,Clinical Admin,Copilot,8,7240
+2026-09-21,n.vale,Practice Operations,Claude,12,11592
+2026-09-21,o.quinn,Finance,Copilot,25,45725
+2026-09-21,p.hart,Patient Services,Copilot,11,27643
+2026-09-22,a.khan,Patient Services,Copilot,16,18160
+2026-09-22,b.shaw,Clinical Admin,Copilot,11,28512
+2026-09-22,c.ward,Practice Operations,Claude,8,20184
+2026-09-22,d.lin,Patient Services,Copilot,17,19618
+2026-09-22,e.moore,Clinical Admin,ReferralAI,25,129300
+2026-09-22,g.ross,Patient Services,Copilot,17,18088
+2026-09-22,h.park,Practice Operations,Claude,13,27768
+2026-09-22,i.bell,Clinical Admin,Copilot,10,22800
+2026-09-22,j.cruz,Finance,Copilot,24,61968
+2026-09-22,k.osei,Patient Services,Copilot,8,14904
+2026-09-22,l.ford,Medical Records,Copilot,11,13981
+2026-09-22,n.vale,Practice Operations,Claude,5,9310
+2026-09-22,o.quinn,Finance,Copilot,13,29536
+2026-09-22,p.hart,Patient Services,Copilot,13,22659
+2026-09-23,a.khan,Patient Services,Copilot,24,41280
+2026-09-23,b.shaw,Clinical Admin,Copilot,17,18360
+2026-09-23,c.ward,Practice Operations,Claude,6,14892
+2026-09-23,d.lin,Patient Services,Copilot,24,48264
+2026-09-23,e.moore,Clinical Admin,Copilot,9,17649
+2026-09-23,f.ahmed,Medical Records,Copilot,23,41515
+2026-09-23,g.ross,Patient Services,Copilot,11,22264
+2026-09-23,h.park,Practice Operations,Claude,17,39610
+2026-09-23,i.bell,Clinical Admin,Copilot,23,49358
+2026-09-23,j.cruz,Finance,Copilot,12,24336
+2026-09-23,k.osei,Patient Services,Copilot,5,6800
+2026-09-23,n.vale,Practice Operations,Claude,23,27945
+2026-09-23,o.quinn,Finance,Copilot,19,44536
+2026-09-23,p.hart,Patient Services,Copilot,18,25182
+2026-09-24,a.khan,Patient Services,Copilot,15,19350
+2026-09-24,c.ward,Practice Operations,Claude,5,7325
+2026-09-24,d.lin,Patient Services,Copilot,13,32669
+2026-09-24,e.moore,Clinical Admin,Copilot,12,28632
+2026-09-24,f.ahmed,Medical Records,Copilot,7,12698
+2026-09-24,g.ross,Patient Services,Copilot,13,26390
+2026-09-24,h.park,Practice Operations,Claude,17,26503
+2026-09-24,i.bell,Clinical Admin,Copilot,21,35364
+2026-09-24,j.cruz,Finance,Copilot,4,6204
+2026-09-24,k.osei,Patient Services,Copilot,15,33885
+2026-09-24,l.ford,Medical Records,Copilot,18,17550
+2026-09-24,m.nash,Clinical Admin,ReferralAI,6,32418
+2026-09-24,n.vale,Practice Operations,Claude,3,7137
+2026-09-24,o.quinn,Finance,Copilot,5,9305
+2026-09-24,p.hart,Patient Services,Copilot,13,28288
+2026-09-25,a.khan,Patient Services,Copilot,13,29653
+2026-09-25,b.shaw,Clinical Admin,ReferralAI,13,85137
+2026-09-25,c.ward,Practice Operations,Claude,20,19460
+2026-09-25,d.lin,Patient Services,Copilot,23,52923
+2026-09-25,g.ross,Patient Services,Copilot,6,14742
+2026-09-25,h.park,Practice Operations,Claude,17,21080
+2026-09-25,i.bell,Clinical Admin,Copilot,4,6256
+2026-09-25,j.cruz,Finance,Copilot,14,23338
+2026-09-25,k.osei,Patient Services,Copilot,19,33117
+2026-09-25,l.ford,Medical Records,Copilot,8,10064
+2026-09-25,m.nash,Clinical Admin,ReferralAI,22,151734
+2026-09-25,n.vale,Practice Operations,Claude,10,18440
+2026-09-25,o.quinn,Finance,Copilot,11,24915
+2026-09-25,p.hart,Patient Services,Copilot,12,27444
+2026-09-28,a.khan,Patient Services,Copilot,17,27319
+2026-09-28,c.ward,Practice Operations,Claude,25,35300
+2026-09-28,d.lin,Patient Services,Copilot,9,15183
+2026-09-28,e.moore,Clinical Admin,Copilot,10,16810
+2026-09-28,f.ahmed,Medical Records,Copilot,25,37600
+2026-09-28,g.ross,Patient Services,Copilot,11,10076
+2026-09-28,h.park,Practice Operations,Claude,22,53372
+2026-09-28,i.bell,Clinical Admin,ReferralAI,10,64290
+2026-09-28,j.cruz,Finance,Copilot,23,29647
+2026-09-28,k.osei,Patient Services,Copilot,23,25254
+2026-09-28,m.nash,Clinical Admin,ReferralAI,17,49368
+2026-09-28,n.vale,Practice Operations,Claude,5,7520
+2026-09-28,o.quinn,Finance,Copilot,8,10488
+2026-09-28,p.hart,Patient Services,Copilot,19,36613
+2026-09-29,b.shaw,Clinical Admin,ReferralAI,18,137754
+2026-09-29,c.ward,Practice Operations,Claude,6,11154
+2026-09-29,e.moore,Clinical Admin,Copilot,24,57192
+2026-09-29,f.ahmed,Medical Records,Copilot,20,32980
+2026-09-29,g.ross,Patient Services,Copilot,3,4323
+2026-09-29,h.park,Practice Operations,Claude,14,31878
+2026-09-29,i.bell,Clinical Admin,ReferralAI,21,105840
+2026-09-29,j.cruz,Finance,Copilot,6,13692
+2026-09-29,k.osei,Patient Services,Copilot,22,45078
+2026-09-29,l.ford,Medical Records,Copilot,23,23667
+2026-09-29,m.nash,Clinical Admin,ReferralAI,25,113850
+2026-09-29,n.vale,Practice Operations,Claude,7,6944
+2026-09-29,p.hart,Patient Services,Copilot,6,6594
+2026-09-30,a.khan,Patient Services,Copilot,15,27435
+2026-09-30,b.shaw,Clinical Admin,ReferralAI,21,152460
+2026-09-30,c.ward,Practice Operations,Claude,23,25346
+2026-09-30,d.lin,Patient Services,Copilot,11,10637
+2026-09-30,e.moore,Clinical Admin,Copilot,17,30770
+2026-09-30,g.ross,Patient Services,Copilot,24,39648
+2026-09-30,h.park,Practice Operations,Claude,4,6860
+2026-09-30,i.bell,Clinical Admin,Copilot,17,18479
+2026-09-30,j.cruz,Finance,Copilot,4,10044
+2026-09-30,k.osei,Patient Services,Copilot,21,27720
+2026-09-30,l.ford,Medical Records,Copilot,21,28182
+2026-09-30,m.nash,Clinical Admin,Copilot,13,32305
+2026-09-30,n.vale,Practice Operations,Claude,11,13156
+2026-09-30,p.hart,Patient Services,Copilot,6,13518

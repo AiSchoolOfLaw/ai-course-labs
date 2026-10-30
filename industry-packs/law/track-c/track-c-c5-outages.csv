@@ -1,0 +1,6 @@
+date,platform,cause,minutes_down
+2026-09-03,Copilot,"Vendor outage, all users",30
+2026-09-09,ContractAI,Model quota reached (HTTP 429),22
+2026-09-15,Claude,"Vendor outage, partial",9
+2026-09-22,ContractAI,Expired certificate on document connector,18
+2026-09-28,ContractAI,"Bad deployment, rolled back",12

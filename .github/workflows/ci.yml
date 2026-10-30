@@ -1,0 +1,25 @@
+name: Lab checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: track-a-agent-developer/requirements.txt
+      - name: Install Track A requirements
+        run: pip install -r track-a-agent-developer/requirements.txt
+      - name: Compile all Python files
+        run: python -m compileall -q .
+      - name: Run Track A tests (fake AI, no API key)
+        working-directory: track-a-agent-developer
+        run: pytest
+      - name: Validate practice data
+        run: python scripts/validate_data.py
