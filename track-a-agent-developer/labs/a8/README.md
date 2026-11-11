@@ -60,7 +60,7 @@ The key is passed at run time with `--env-file`, so it never sits inside the ima
 > Code: `project/cost_report.py`
 
 1. Run your 50-case evaluation set once and then run `cost_report.py`.
-2. Apply one cost cut from the list above (for example a shorter system prompt).
+2. Apply one cost cut from the A8 lesson (for example a shorter system prompt, a smaller model for simple steps, or caching answers to repeated questions).
 3. Run the evaluation and cost report again. Record both quality and cost.
 4. Merge your branch only if every safety case still passes, then tag it: `git tag v1.1.0`.
 5. Build and run the new release as its own image. Set `VERSION = '1.1.0'` in `app.py`, then run `docker build -t booking-agent:1.1.0 .` and `docker run --env-file .env -p 8000:8000 booking-agent:1.1.0`. Check that `/health` shows 1.1.0. You now have two built images, 1.0.0 and 1.1.0; the A9 rollback drill returns to 1.1.0.
