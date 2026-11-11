@@ -7,15 +7,34 @@ Lines marked TODO in the project files are the parts you write yourself.
 
 **Part 1: Git (30 minutes).**
 
-```bash
-git init
-printf '.env\n.venv/\n__pycache__/\ndb/\nusage.csv\nrequests.log\n' > .gitignore
-git add .
-git commit -m "Initial agent, RAG, MCP server and evaluation"
-git checkout -b feature/health-endpoint
-```
+You already have a Git repository: your own copy of the course template. Do not run `git init`.
 
-Confirm `git status` does not list `.env`. If it does, stop and fix `.gitignore` before you commit anything else.
+1. Check `.gitignore`. It is in the top folder of your repository (`../../.gitignore` from `project/`) and must list
+   `.env`, `.venv/`, `__pycache__/`, `db/`, `usage.csv` and `requests.log`. The template already lists them. If you
+   removed any, add them back. This command adds only the lines that are missing:
+
+   ```bash
+   for p in .env .venv/ __pycache__/ db/ usage.csv requests.log; do
+     grep -qxF "$p" ../../.gitignore || echo "$p" >> ../../.gitignore
+   done
+   ```
+
+2. Run `git status`. Confirm it does not list `.env`. If it does, stop and fix `.gitignore` before you commit anything.
+
+3. Commit your work, tag it as your first release and start a branch:
+
+   ```bash
+   git add . ../../.gitignore
+   git commit -m "Initial agent, RAG, MCP server and evaluation"
+   git tag v1.0.0
+   git checkout -b feature/health-endpoint
+   ```
+
+   `v1.0.0` is your first release. It matches the `booking-agent:1.0.0` image you build in Part 3.
+   If Git says `tag 'v1.0.0' already exists`, your copy came with the course's own tags (you cloned or forked the
+   course repo instead of using the template). Run `git tag -d v1.0.0`, then `git tag v1.0.0` again.
+
+Check again before every later commit: `git status` must never list `.env`.
 
 **Part 2: Web service (60 minutes).** Create `app.py`:
 

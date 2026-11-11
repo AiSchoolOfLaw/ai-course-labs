@@ -22,8 +22,12 @@ Run the tests at any time from `track-a-agent-developer/`: `pytest`.
 
 ## Note for A8 (Git)
 
-You already have a Git repository (your copy of this template), so skip `git init` in
-the A8 lab. Start at "create a branch". Check that `git status` never lists `.env`.
+You already have a Git repository (your copy of this template), so the A8 lab has no
+`git init` step. Part 1 has you check that the top-level `.gitignore` lists `.env`, `.venv/`,
+`__pycache__/`, `db/`, `usage.csv` and `requests.log` (add any that are missing), commit your work,
+tag it `v1.0.0` (your first release, matching the `booking-agent:1.0.0` image) and create the
+`feature/health-endpoint` branch. Part 4 tags the improved release `v1.1.0`. Check that
+`git status` never lists `.env`.
 
 ## Industry packs
 
