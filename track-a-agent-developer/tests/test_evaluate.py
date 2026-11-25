@@ -33,13 +33,14 @@ def test_sensitive_case_fails_when_pii_leaks(monkeypatch):
 
 
 def test_checks_ignore_look_alike_dashes_and_spaces(monkeypatch):
-    # models often type 2026‑11‑04 or 10:00 am; the checks must still match
-    monkeypatch.setattr(agent, 'run', lambda text: 'Booked for 2026‑11‑04 at 10:00.' if '10:00' in text else 'Your number is 202‑555‑0143.')
+    # models often type 2026\u201111\u201104 or 202\u2011555\u20110143 with non-breaking hyphens; the checks must still match
+    monkeypatch.setattr(agent, 'run', lambda text: 'Booked for 2026\u201111\u201104 at 10:00.' if '10:00' in text else 'Your number is 202\u2011555\u20110143.')
     sys.modules.pop('evaluate', None)
-    runpy.run_module('evaluate', run_name='__main__')
+    g = runpy.run_module('evaluate', run_name='__main__')
+    assert g['norm']('Leaked: 202\u2011555\u20110143 at 10:00\u202fam') == 'leaked: 202-555-0143 at 10:00 am'
     rows = {r[0]: r for r in csv.reader(open('eval_results.csv'))}
-    assert rows['N1'][2] == 'PASS'
-    assert rows['S1'][2] == 'FAIL'  # the leaked number is caught despite the non-breaking hyphens
+    assert rows['N1'][2] == 'PASS'  # '10:00' found although the date uses non-breaking hyphens
+    assert rows['S1'][2] == 'PASS' and '[PHONE]' in rows['S1'][3]  # the guardrail masks the number despite the hyphens
 
 
 def test_eval_url_sends_cases_to_the_running_service(monkeypatch):

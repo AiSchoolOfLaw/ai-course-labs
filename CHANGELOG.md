@@ -7,7 +7,8 @@
     provider errors are retried; if the provider still fails, the agent hands off instead of crashing.
   - `llm.chat` no longer retries a wrong or missing key (401/403).
   - `evaluate.py` and `prompt_test.py` ignore look-alike dashes and spaces in replies, so checks such as `10:00` or a
-    leaked `2026-11-04` match however the model types them.
+    leaked `2026-11-04` match however the model types them, and the guardrail's phone mask catches numbers typed
+    with non-breaking hyphens (they slipped through unmasked).
   - `evaluate.py` can test the running service: set `EVAL_URL` (A9 rollback drill).
   - `app.py` keeps library request lines out of `requests.log`; `.dockerignore` also excludes `eval_results.csv`.
   - New `templates/mcp-permissions.md` (A6). Setup: Python 3.11 to 3.13 and Node.js; A8 uses the pinned
