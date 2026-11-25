@@ -9,7 +9,9 @@
   - `evaluate.py` and `prompt_test.py` ignore look-alike dashes and spaces in replies, so checks such as `10:00` or a
     leaked `2026-11-04` match however the model types them, and the guardrail's phone mask catches numbers typed
     with non-breaking hyphens (they slipped through unmasked).
-  - `evaluate.py` can test the running service: set `EVAL_URL` (A9 rollback drill).
+  - `evaluate.py` can test the running service: set `EVAL_URL` (A9 rollback drill). The drill's bad release now removes
+    the advice rule from the system prompt and the handoff tool's description (with only the prompt changed, the model
+    kept handing off and the drill showed no failure).
   - `app.py` keeps library request lines out of `requests.log`; `.dockerignore` also excludes `eval_results.csv`.
   - New `templates/mcp-permissions.md` (A6). Setup: Python 3.11 to 3.13 and Node.js; A8 uses the pinned
     `requirements.txt` (no `pip freeze`) and notes free-tier costs; A1, A6 and A9 point to their templates.

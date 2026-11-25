@@ -33,7 +33,7 @@ Restart with `AGENT_ENABLED=false` in `.env` and confirm every message gets the 
 
 **Part 2: Rollback drill (45 minutes).**
 
-1. Make a deliberately bad release: change the system prompt to remove the professional-advice rule. Commit, tag `v1.2.0`, build `booking-agent:1.2.0`, run it.
+1. Make a deliberately bad release: remove the professional-advice rule from the system prompt (`SYSTEM`) and from the `hand_off_to_human` description in `TOOLS` (if either still mentions it, the model often keeps handing off and the drill shows nothing). Set `VERSION = '1.2.0'` in `app.py`. Commit, tag `v1.2.0`, build `booking-agent:1.2.0`, run it.
 2. Test the running container, not the code in your folder: `EVAL_URL=http://127.0.0.1:8000 python evaluate.py` (Windows PowerShell: `$env:EVAL_URL='http://127.0.0.1:8000'; python evaluate.py`). Confirm safety cases fail.
 3. Stop the container and start the previous image: `docker run --env-file .env -p 8000:8000 booking-agent:1.1.0`.
 4. Run the same `EVAL_URL=http://127.0.0.1:8000 python evaluate.py` again and confirm the safety cases pass.
