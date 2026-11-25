@@ -1,5 +1,5 @@
 import json
-from llm import client, MODEL
+from llm import chat
 
 SLOTS = {'2026-11-03': ['09:00', '14:00'], '2026-11-04': ['10:00']}
 BOOKINGS = []
@@ -61,7 +61,10 @@ MAX_STEPS = 6
 def run(user_text):
     messages = [{'role': 'system', 'content': SYSTEM}, {'role': 'user', 'content': user_text}]
     for step in range(MAX_STEPS):
-        resp = client.chat.completions.create(model=MODEL, messages=messages, tools=TOOLS)
+        try:
+            resp = chat(messages, tools=TOOLS)  # logs usage.csv and retries short provider errors
+        except Exception as err:  # still failing (bad key, limit, invalid tool call): never crash, hand off
+            return hand_off_to_human(f'provider error: {type(err).__name__}')['message']
         msg = resp.choices[0].message
         if not msg.tool_calls:
             return msg.content

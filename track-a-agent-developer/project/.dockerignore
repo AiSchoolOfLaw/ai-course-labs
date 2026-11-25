@@ -4,3 +4,4 @@ db
 __pycache__
 usage.csv
 requests.log
+eval_results.csv

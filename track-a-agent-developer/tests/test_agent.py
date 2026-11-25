@@ -1,6 +1,6 @@
 import copy, json
 import pytest
-import agent
+import agent, llm
 from conftest import fake_client, make_msg, make_resp
 
 
@@ -18,7 +18,7 @@ def test_books_a_free_slot(monkeypatch):
         make_resp(make_msg(tool_calls=[('book_appointment', args)])),
         make_resp(make_msg('Booked: Sam Lee on 2026-11-03 at 14:00.')),
     ])
-    monkeypatch.setattr(agent, 'client', client)
+    monkeypatch.setattr(llm, 'client', client)
     assert '14:00' in agent.run('Book 14:00 on 2026-11-03 for Sam Lee')
     assert agent.BOOKINGS == [{'name': 'Sam Lee', 'date': '2026-11-03', 'time': '14:00'}]
     assert '14:00' not in agent.SLOTS['2026-11-03']
@@ -30,7 +30,7 @@ def test_bad_tool_arguments_do_not_crash(monkeypatch):
         make_resp(make_msg(tool_calls=[('book_appointment', '["a list"]')])),
         make_resp(make_msg('Sorry, could you confirm the date?')),
     ])
-    monkeypatch.setattr(agent, 'client', client)
+    monkeypatch.setattr(llm, 'client', client)
     assert agent.run('book me') == 'Sorry, could you confirm the date?'
     tool_msgs = [m for m in comp.calls[-1]['messages'] if m.get('role') == 'tool']
     assert len(tool_msgs) == 2
@@ -44,7 +44,7 @@ def test_unknown_tool_is_reported(monkeypatch):
         make_resp(make_msg(tool_calls=[('delete_everything', '{}')])),
         make_resp(make_msg('I cannot do that.')),
     ])
-    monkeypatch.setattr(agent, 'client', client)
+    monkeypatch.setattr(llm, 'client', client)
     agent.run('do something odd')
     tool_msg = [m for m in comp.calls[-1]['messages'] if m.get('role') == 'tool'][0]
     assert json.loads(tool_msg['content'])['reason'] == 'unknown tool'
@@ -54,7 +54,7 @@ def test_step_limit_hands_off(monkeypatch):
     loop = [make_resp(make_msg(tool_calls=[('check_availability', '{"date": "2026-11-03"}')]))
             for _ in range(agent.MAX_STEPS)]
     client, _ = fake_client(loop)
-    monkeypatch.setattr(agent, 'client', client)
+    monkeypatch.setattr(llm, 'client', client)
     assert agent.run('keep checking') == 'A staff member will contact you shortly.'
 
 
@@ -67,3 +67,22 @@ def test_cancel_appointment_lab_task():
         pytest.skip('A5 step 3: cancel_appointment not written yet')
     assert '09:00' in agent.SLOTS['2026-11-03']
     assert 'cancel_appointment' in agent.REGISTRY
+
+
+def test_agent_logs_usage_through_llm_chat(monkeypatch):
+    client, _ = fake_client([make_resp(make_msg('Hello! How can I help?'), prompt_tokens=7, completion_tokens=3)])
+    monkeypatch.setattr(llm, 'client', client)
+    agent.run('hi')
+    import csv
+    assert list(csv.reader(open('usage.csv')))[-1][1:] == ['7', '3']  # the cost report (A8) now sees the agent
+
+
+def test_provider_error_hands_off_instead_of_crashing(monkeypatch):
+    import types
+
+    class Broken:
+        def create(self, **kw):
+            raise RuntimeError('400 tool call validation failed')
+    monkeypatch.setattr(llm, 'client', types.SimpleNamespace(chat=types.SimpleNamespace(completions=Broken())))
+    monkeypatch.setattr(llm.time, 'sleep', lambda s: None)
+    assert agent.run('book me') == 'A staff member will contact you shortly.'

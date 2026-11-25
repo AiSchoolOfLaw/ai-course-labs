@@ -1,7 +1,7 @@
 import re
 
 EMAIL = re.compile(r'[\w.+-]+@[\w-]+\.[\w.-]+')
-PHONE = re.compile(r'(?<!\d)(?:\+\d{1,3}[\s.-]?)?\(?\d{3,5}\)?[\s.-]?\d{3}[\s.-]?\d{3,4}(?!\d)')  # does not mask dates such as 2026-11-04
+PHONE = re.compile(r'(?<!\d)(?:\+\d{1,3}[\s.\-\u2010-\u2015\u2212]?)?\(?\d{3,5}\)?[\s.\-\u2010-\u2015\u2212]?\d{3}[\s.\-\u2010-\u2015\u2212]?\d{3,4}(?!\d)')  # does not mask dates such as 2026-11-04
 
 def mask_pii(text):
     return PHONE.sub('[PHONE]', EMAIL.sub('[EMAIL]', text))

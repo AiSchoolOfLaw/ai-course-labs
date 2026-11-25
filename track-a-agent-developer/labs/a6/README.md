@@ -15,7 +15,7 @@ Create `server.py`:
 4. Add a second tool, `list_services`, that returns a fixed list.
 5. Add input checking to `check_availability`: reject any date that is not in YYYY-MM-DD format.
 6. Add logging: write the tool name and arguments to a file on every call.
-7. Complete the permissions table below.
+7. Complete the MCP permissions table: `templates/mcp-permissions.md` in your repository.
 
 **Industry pack.** Expose your industry pack's extra tool or documents from the same MCP server if you added them in A5.
 
