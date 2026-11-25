@@ -4,8 +4,12 @@ from pydantic import BaseModel
 from agent import run
 from guardrails import safe_run, mask_pii
 
-logging.basicConfig(filename='requests.log', level=logging.INFO, format='%(message)s')
-logging.getLogger('httpx').setLevel(logging.WARNING)  # keep library request lines out of requests.log
+def our_lines_only(record):
+    return record.name == 'root'  # library messages (for example each HTTP request) stay out of requests.log
+
+log_file = logging.FileHandler('requests.log')
+log_file.addFilter(our_lines_only)
+logging.basicConfig(level=logging.INFO, format='%(message)s', handlers=[log_file])
 app = FastAPI(title='Booking Agent')
 VERSION = '1.0.0'
 

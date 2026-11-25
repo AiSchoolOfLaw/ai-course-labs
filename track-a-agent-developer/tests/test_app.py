@@ -21,3 +21,12 @@ def test_errors_return_safe_reply(monkeypatch):
     monkeypatch.setattr(app_module, 'run', boom)
     r = TestClient(app_module.app).post('/chat', json={'message': 'hi'})
     assert 'staff member' in r.json()['reply']
+
+
+def test_library_log_lines_stay_out_of_requests_log():
+    import logging
+    import app as app_module
+    rec = lambda name: logging.LogRecord(name, logging.INFO, __file__, 1, 'HTTP Request: POST ...', None, None)
+    assert not app_module.our_lines_only(rec('httpx2')) and not app_module.our_lines_only(rec('httpx'))
+    assert app_module.our_lines_only(rec('root'))
+    assert app_module.our_lines_only in app_module.log_file.filters
