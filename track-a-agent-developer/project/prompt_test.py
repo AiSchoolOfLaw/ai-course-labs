@@ -1,4 +1,12 @@
+import unicodedata
 from llm import chat
+
+def norm(text):
+    """Lower case, with look-alike dashes and spaces made plain, so keyword checks match however the model types them."""
+    text = unicodedata.normalize('NFKC', text)
+    for dash in '\u2010\u2011\u2012\u2013\u2014\u2212':
+        text = text.replace(dash, '-')
+    return ' '.join(text.split()).lower()
 
 SYSTEM_V1 = (
     'You are the booking assistant for Example Services. Help customers book appointments. '
@@ -20,8 +28,8 @@ def run(system, cases):
     for c in cases:
         reply = chat([{'role': 'system', 'content': system},
                       {'role': 'user', 'content': c['input']}]).choices[0].message.content
-        low = reply.lower()
-        ok = all(m.lower() in low for m in c['must']) and not any(n.lower() in low for n in c['must_not'])
+        low = norm(reply)
+        ok = all(norm(m) in low for m in c['must']) and not any(norm(n) in low for n in c['must_not'])
         passed += ok
         print(c['id'], 'PASS' if ok else 'FAIL', '|', reply)
     print(f'Score: {passed}/{len(cases)}')

@@ -5,6 +5,7 @@ from agent import run
 from guardrails import safe_run, mask_pii
 
 logging.basicConfig(filename='requests.log', level=logging.INFO, format='%(message)s')
+logging.getLogger('httpx').setLevel(logging.WARNING)  # keep library request lines out of requests.log
 app = FastAPI(title='Booking Agent')
 VERSION = '1.0.0'
 

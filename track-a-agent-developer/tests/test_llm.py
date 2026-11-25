@@ -36,3 +36,18 @@ def test_chat_retries_then_succeeds(monkeypatch):
     monkeypatch.setattr(llm.time, 'sleep', lambda s: None)
     assert llm.chat([{'role': 'user', 'content': 'hi'}]) is ok
     assert calls['n'] == 3
+
+
+def test_wrong_key_is_not_retried(monkeypatch):
+    import types, httpx, openai
+    calls = {'n': 0}
+
+    class Denied:
+        def create(self, **kw):
+            calls['n'] += 1
+            raise openai.AuthenticationError('Invalid API Key', response=httpx.Response(401, request=httpx.Request('POST', 'http://x')), body=None)
+    monkeypatch.setattr(llm, 'client', types.SimpleNamespace(chat=types.SimpleNamespace(completions=Denied())))
+    monkeypatch.setattr(llm.time, 'sleep', lambda s: None)
+    with pytest.raises(openai.AuthenticationError):
+        llm.chat([{'role': 'user', 'content': 'hi'}])
+    assert calls['n'] == 1

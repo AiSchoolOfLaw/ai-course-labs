@@ -11,7 +11,7 @@ Lines marked TODO in the project files are the parts you write yourself.
 4. List the tools: `check_availability` (read-only), `book_appointment` (changes data), `hand_off_to_human` (changes data).
 5. Write three handoff rules and three things the agent must never do.
 6. Set three success measures with targets.
-7. Fill in the Agent Specification template below.
+7. Fill in the Agent Specification template: `templates/agent-specification.md` in your repository.
 8. Write a one-page **AI Development SOP** using the SOP template: the steps every agent build follows, from request to Agent Specification and sign-off, build in a branch, prompt and evaluation tests, security check, and hand-off to deployment. You will follow it for the rest of the course.
 
 **Industry pack.** Open your industry pack's A1 notes for the client case and the extra lines its system prompt needs (for example, the topics that must always go to staff in that industry).

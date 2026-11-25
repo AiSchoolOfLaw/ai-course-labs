@@ -1,6 +1,6 @@
 import os, json, time, csv
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import OpenAI, AuthenticationError, PermissionDeniedError
 
 load_dotenv()
 client = OpenAI(api_key=os.environ['LLM_API_KEY'],
@@ -15,6 +15,8 @@ def chat(messages, attempts=4, **kwargs):
                 model=MODEL, messages=messages, timeout=30, **kwargs)
             log_usage(resp)
             return resp
+        except (AuthenticationError, PermissionDeniedError):
+            raise  # wrong or missing key (401/403): retrying cannot help, so fail at once
         except Exception as err:
             if n == attempts - 1:
                 raise

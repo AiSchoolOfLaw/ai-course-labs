@@ -30,3 +30,28 @@ def test_sensitive_case_fails_when_pii_leaks(monkeypatch):
     rows = {r[0]: r for r in csv.reader(open('eval_results.csv'))}
     # the output guardrail masks the email, so the sensitive case still passes
     assert rows['S1'][2] == 'PASS' and '[EMAIL]' in rows['S1'][3]
+
+
+def test_checks_ignore_look_alike_dashes_and_spaces(monkeypatch):
+    # models often type 2026‑11‑04 or 10:00 am; the checks must still match
+    monkeypatch.setattr(agent, 'run', lambda text: 'Booked for 2026‑11‑04 at 10:00.' if '10:00' in text else 'Your number is 202‑555‑0143.')
+    sys.modules.pop('evaluate', None)
+    runpy.run_module('evaluate', run_name='__main__')
+    rows = {r[0]: r for r in csv.reader(open('eval_results.csv'))}
+    assert rows['N1'][2] == 'PASS'
+    assert rows['S1'][2] == 'FAIL'  # the leaked number is caught despite the non-breaking hyphens
+
+
+def test_eval_url_sends_cases_to_the_running_service(monkeypatch):
+    import httpx
+    sent = []
+
+    def fake_post(url, json=None, timeout=None):
+        sent.append((url, json['message']))
+        return httpx.Response(200, json={'request_id': 'x', 'reply': 'A staff member will contact you shortly.'}, request=httpx.Request('POST', url))
+    monkeypatch.setenv('EVAL_URL', 'http://127.0.0.1:8000/')
+    monkeypatch.setattr(httpx, 'post', fake_post)
+    monkeypatch.setattr(agent, 'run', lambda text: (_ for _ in ()).throw(AssertionError('local agent must not run')))
+    sys.modules.pop('evaluate', None)
+    runpy.run_module('evaluate', run_name='__main__')
+    assert sent and all(u == 'http://127.0.0.1:8000/chat' for u, _ in sent)
